@@ -1,0 +1,55 @@
+.search-card{
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+
+    width: 100%;
+    height: clamp( 110px, 120px, 135px );
+    
+    gap: 1rem;
+
+    background-color: var(--secondary);
+    border-radius: 1rem;
+    padding: 0.6rem 0.6rem;
+    
+    > .search-card__image{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        object-fit: cover;
+
+        border-radius: 0.7rem;
+
+        width: 100px;
+        height: 100px;
+    }
+    > .search-card__image__content {
+        display: flex;
+        flex-direction: column;
+        // justify-content: flex-start;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        gap: 0.4rem;
+
+        > h3 {
+            @include typography( $font-size-md, $font-weight-light, 1 );
+        }
+        > p {
+            @include typography( 0.75, $font-weight-light, 1 );
+            // margin: 0.2rem;
+            margin: 0rem;
+
+            &:hover{
+                color: var(--font-color-black);
+            }
+        }
+
+        > hr{
+            border: none;
+            border-top: 1px dashed var(--font-color-black);
+
+        }
+
+    }
+}

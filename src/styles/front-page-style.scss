@@ -1,0 +1,9 @@
+.front-page-main{
+    padding: 0 1.5rem;
+
+    .front-page-main__h2{
+        @include typography($font-size-md, $font-weight-light, $line-height);
+        align-self: flex-start;
+        color: var(--font-color-black);
+    }
+}

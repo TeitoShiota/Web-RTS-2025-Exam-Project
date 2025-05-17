@@ -1,0 +1,16 @@
+.schedule-page-main{
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 2rem;
+
+    gap: 2rem;
+
+    > h2 {
+        @include typography( $font-size-lg, $font-weight-regular, $line-height );
+        text-align: left;
+        align-self: flex-start;
+        color: var(--font-color-black);
+    }
+}

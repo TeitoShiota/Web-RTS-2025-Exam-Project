@@ -1,0 +1,16 @@
+.search-page-main{
+
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
+    padding: 0 2rem;
+
+    > h2 {
+        align-self: flex-start;
+        
+        @include typography($font-size-lg, $font-weight-light, $line-height);
+        color: var(--font-color-black);
+    }
+}

@@ -1,0 +1,11 @@
+.class-detail-page-main__hero__button{
+    height: 4rem;
+
+    border-radius: 1rem 0 0 1rem;
+
+    @include typography($font-size-md, $font-weight-light, $line-height);
+
+    z-index: 50;
+    position: absolute;
+    right: 0;
+}

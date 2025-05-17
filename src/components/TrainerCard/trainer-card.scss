@@ -1,0 +1,14 @@
+.trainer-card{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+    
+    > .trainer-card__image{
+        width: 100px;
+        border-radius: 1rem;
+    }
+    > .trainer-card__name{
+        @include typography($font-size-sm, $font-weight-light, $line-height)
+    }
+}

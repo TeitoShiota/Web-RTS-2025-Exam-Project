@@ -1,0 +1,113 @@
+//Modified from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
+
+
+.primary-nav{
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem ;
+
+    min-height: 75px;
+    max-height: 120px;
+
+    width: 100%;
+    max-width: 430px;
+    background-color: var(--color-light);
+    margin: 0 auto;
+
+    > h2 {
+        @include typography( $font-size-md, $font-weight-light, 1 );
+        color: var(--font-color-black);
+        margin: 0;
+    }
+
+    > div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        > .primary-nav__icon{
+            font-size: 1.5rem;
+            color: var(--secondary);
+        }
+        
+        > .primary-nav__return-link{
+            display: flex;
+            align-items: center;
+
+            color: var(--primary);
+        }
+        
+        > .primary-nav__button{
+            background-color: transparent;
+            font-size: 2rem;
+            color: var(--secondary);
+
+            padding: 0;
+            
+            &:hover{
+                color: var(--primary);
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+
+.primary-nav__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    right: 0;
+    top: 0;
+    
+    height: 100dvh;
+    width: 0;
+
+    background-color: var(--color-light);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+
+    > .primary-nav__content__button{
+        position: relative;
+        font-size: 2rem;
+
+        text-align: right;
+        
+        color: var(--secondary);
+        background-color: transparent;
+
+    
+        &:hover{
+            color: var(--primary);
+            background-color: transparent;
+        }
+    }
+
+    > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 30px;
+
+        > a{
+            @include typography($font-size-md, $font-weight-light, $line-height);
+            color: var(--font-color-black);
+
+            &:hover{
+                color: var(--primary);
+            }
+        }
+    }
+}
+
+input[type="checkbox"]{
+    display: none;
+}

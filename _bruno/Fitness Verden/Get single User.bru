@@ -1,0 +1,15 @@
+meta {
+  name: Get single User
+  type: http
+  seq: 8
+}
+
+get {
+  url: http://localhost:4000/api/v1/users/3
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjozLCJ1c2VybmFtZSI6InVzZXIzIiwicGFzc3dvcmQiOiIkMmEkMTUkMWRVVUMveUpKZUxrSE9Lc0YuMFYwTzFNOUpWd1FpSkI5LjF6WmxPd3Q3NzRCOENZcFN3Z3EiLCJ1c2VyRmlyc3ROYW1lIjpudWxsLCJ1c2VyTGFzdE5hbWUiOm51bGwsImNyZWF0ZWRBdCI6IjIwMjAtMDMtMDhUMTk6MDY6NTQuMjg5WiIsInVwZGF0ZWRBdCI6IjIwMjAtMDMtMDhUMTk6MDY6NTQuMjg5WiJ9LCJpYXQiOjE3NDExMDA1NzYsImV4cCI6MTc0MTEwNDE3Nn0.CU8chn2-0PJ-QevYlvarm3HEK8x_KDC5ymzViYb-cJs
+}

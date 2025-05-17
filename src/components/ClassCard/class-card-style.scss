@@ -1,0 +1,16 @@
+.class-card{
+    width: 42dvw;
+    // height: 7rem;
+
+    .class-card__image{
+        width: clamp( 100px, 145px, 190px );
+        height: clamp( 125px, 160px, 225px );
+        border-radius: 1rem;
+
+    }
+    .class-card__heading{
+        color: var(--font-color-black);
+        overflow: hidden;
+        font-size: 1.2rem;
+    }
+}

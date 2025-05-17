@@ -1,0 +1,31 @@
+.login-page-main{
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+
+    position: relative;
+
+    width: 100%;
+    padding: 0 2rem;
+
+
+    > h2 {
+        @include typography( $font-size-lg, $font-weight-regular, $line-height );
+        text-align: left;
+        align-self: flex-start;
+        color: var(--font-color-black);
+    }
+
+    > .login-page-main__content{
+
+        margin: auto 0;
+
+        align-self: center;
+        width: clamp(150px, 90%, 325px);
+        > h2 {
+            width: 100%;
+            @include typography( 3, $font-weight-regular, $line-height );
+        }
+    }
+}

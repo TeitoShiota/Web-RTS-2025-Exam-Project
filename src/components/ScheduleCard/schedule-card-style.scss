@@ -1,0 +1,24 @@
+.schedule-card{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    color: var(--font-color-black);
+
+
+    > .schedule-card__date-info{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    > h3 {
+        @include typography( $font-size-md, $font-weight-regular, 1 );
+
+    }
+
+    > hr{
+        border: none;
+
+        border-top: 1px dashed var(--font-color-black);
+    }
+}
